@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+margin: 0;
+}
+
+
+/* ### CREATING THE GRID CONTAINER ### */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: #000;
+  padding: 120px 180px;
+}
+
+
+/* ### CREATE COLUMS AND ROWS BY TARGETING EACH BOXES ### */
+.grid-container > div.item-1 {
+  background-color: #EB5020;
+  padding: 120px 50px;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
+}
+.grid-container > div.item-2 {
+  background-color: #FFA401;
+  padding: 120px 50px;
+  grid-column: 5 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.grid-container > div.item-3 {
+  background-color: #05AA42;
+  padding: 50px;
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 2;
+}
+
+.grid-container > div.item-4 {
+  background-color: #01AEFD;
+  padding: 50px;
+  grid-column: 4 / span 3;
+  grid-row: 3;
+}
+
+.grid-container > div.item-5 {
+  background-color: #01AEFD;
+  padding: 50px;
+  grid-column: 4 / span 3;
+  grid-row: 4;
+}
+
+
+
+/* ### MOBILE RESPONSIVE STYLE ### */
+@media only screen and (max-width: 768px) {
+  /* ### For mobile phones: ### */
+
+.grid-container > div.item-1 {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    padding: 50px;
+  }
+.grid-container > div.item-2 {
+    grid-column: 1 / span 6;
+    grid-row: 2;
+    padding: 50px;
+  }
+.grid-container > div.item-3 {
+    grid-column: 1 / span 6;
+    grid-row: 3;
+  }
+.grid-container > div.item-4 {
+    grid-column: 1 / span 6;
+    grid-row: 4;
+  }
+.grid-container > div.item-5 {
+    grid-column: 1 / span 6;
+    grid-row: 5;
+  }
+.grid-container {
+  padding: 10px;
+}
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item-1">1</div>
+  <div class="item-2">2</div>
+  <div class="item-3">3</div>  
+  <div class="item-4">4</div>
+  <div class="item-5">5</div>
+</div>
+
+</body>
+</html>
+
+

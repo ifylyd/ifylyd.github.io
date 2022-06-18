@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<! ### CONNECTING TO GOOGLE FONTS ### -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@100&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+margin: 0;
+}
+
+/* ### HERE IS FOR FONT-SIZE AND FONT-FAMILY ### */
+p {
+font-size: 15px;
+font-family: 'Lexend Deca', sans-serif;
+color: hsla(0, 0%, 100%, 0.75);
+margin-bottom: 50px;
+}
+h2 {
+font-family: 'Big Shoulders Display', cursive;
+color: hsl(0, 0%, 95%);
+}
+a {
+font-family: 'Lexend Deca', sans-serif;
+}
+
+/* ### THIS IS TO CONVERT EACH DIV INTO FLEX BOX ### */
+.flex-container {
+  display: flex;
+justify-content: center;
+  align-items: center;
+  height: 700px;
+  background-color: hsl(0, 0%, 95%);
+
+}
+
+/* ### THIS IS TO TARGET ALL CONTAINERS AND GIVE UNIQUE BACKGROUND COLORS ### */
+.flex-container > div.sedan {
+  background-color: hsl(31, 77%, 52%);
+  color: #fff;
+  padding: 50px 50px 150px;
+  width: 300px;
+  height: 400px;
+border-radius: 10px 0 0 10px;
+}
+.flex-container > div.suvs {
+  background-color: hsl(184, 100%, 22%);
+  color: #fff;
+  padding: 50px 50px 150px;
+  width: 300px;
+  height: 400px; 
+}
+.flex-container > div.luxury {
+  background-color: hsl(179, 100%, 13%);
+  color: #fff;
+  padding: 50px 50px;
+  width: 300px;
+  height: 400px;
+border-radius: 0 10px 10px 0;
+}
+
+/* ### FOR STYLING THE LINKS ### */
+a.sedan:link, a.sedan:visited {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight:700;
+color: hsl(31, 77%, 52%);
+}
+
+a.sedan:hover, a.sedan:active {
+  background-color: hsla(0, 0%, 100%, 0);
+  color: #fff;
+border: 1px solid #fff;
+}
+
+a.suvs:link, a.suvs:visited {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight:700;
+color: hsl(184, 100%, 22%);
+}
+
+a.suvs:hover, a.suvs:active {
+  background-color: hsla(0, 0%, 100%, 0);
+  color: #fff;
+border: 1px solid #fff;
+}
+
+a.luxury:link, a.luxury:visited {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight:700;
+color: hsl(179, 100%, 13%);
+}
+
+a.luxury:hover, a.luxury:active {
+  background-color: hsla(0, 0%, 100%, 0);
+  color: #fff;
+border: 1px solid #fff;
+}
+img {
+width: 50px;
+}
+
+/* ### MOBILE RESPONSIVE ### */
+@media (max-width: 375px) {
+  .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+
+  <div class="sedan">
+  <img src="icon-sedans.svg">
+  <h2>SEDAN</h2>
+  <p>Choose a Sedan for its affordability and ecellent fuel economy. Ideal for crusing in the city or on your net road trip.</p>
+  <a href="#" class="sedan"> Learn More</a>
+  </div>
+  
+  <div class="suvs">
+  <img src="icon-suvs.svg">
+  <h2>SUVS</h2>
+  <p>Take an SUV for its spacious interior, power and vasatility. Perfect for your net family vacation and off-road adventures.</p>
+  <a href="#" class="suvs"> Learn More</a>
+  </div>
+  
+  <div class="luxury">
+  <img src="icon-luxury.svg">
+  <h2>LUXURY</h2>
+  <p>Cruise the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and  arrie in style </p>
+  <a href="#" class="luxury"> Learn More</a>
+  </div>  
+</div>
+
+
+</body>
+</html>
+
+
