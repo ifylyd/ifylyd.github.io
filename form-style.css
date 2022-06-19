@@ -95,8 +95,7 @@ font-size: 50px;
 }
 
 /* ### MOBILE RESPONSIVE ### */
-<<<<<<< HEAD
-@media (max-width: 1075px) {
+@media (max-width: 875px) {
   .flex-container {
   display: flex;
   justify-content: center;
@@ -131,5 +130,4 @@ font-size: 16px;
 
 h1 {
 font-size: 30px;
-}
 }
